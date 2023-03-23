@@ -12,14 +12,14 @@
 <body style="background-color: rgb(202, 207, 243);">
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
-      <h1>
+      <h1 class="arcadia" >
         <span role="img" aria-label="money">🎰</span>
         {{!-- find an emoji for games and make a homepage to choose which games user wants to play and set link below--}}
         <a style="text-align:center;" href="/views/layouts/games.handlebars">Nic Cage Arcade!</a>
         <span role="img" aria-label="money">🎱</span>
       </h1>
       {{#if logged_in}}
-      <div>
+      <div class="arcadia" >
         <button class="btn" id="logout">logout</button>
       </div>
       {{/if}}

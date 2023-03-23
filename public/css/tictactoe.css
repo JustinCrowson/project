@@ -1,6 +1,6 @@
 td{
-    border: 2px solid #333;
-    height: 100px;
+    border: 12px solid #333;
+    height: 120px;
     width: 100px;
     text-align: center;
     vertical-align: middle;
@@ -51,4 +51,9 @@ table tr td:last-child {
     border-radius: 5px;
     color: white;
     font-size: 2em;
+}
+
+.arcadia {
+    text-align: center;
+    margin-top: 15px;
 }
