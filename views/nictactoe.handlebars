@@ -1,0 +1,52 @@
+{{!-- {{#each users as |user| }}
+<div class="row align-center mb-5">
+  <div class="col-md-6">
+    <h2> {{user.name}}</h2>
+  </div>
+  <div class="col-md-6">
+    <h3><a href="mailto:{{user.email}}">{{user.email}}</a></h3>
+  </div>
+</div>
+{{/each}} --}}
+
+{{!-- <h1>You have successfully connected this page.</h1> --}}
+
+{{!-- {{#if loggedIn}} --}}
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nic Tac Toe!</title>
+  <link href="../../public/css/tictactoe.css" rel="stylesheet">
+</head>
+
+  <div class="row">Try to win against Nicolas Cage!
+        </div>
+        <br>
+        <table>
+            <tr>
+                <td class="cell" id="0"></td>
+                <td class="cell" id="1"></td>
+                <td class="cell" id="2"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="3"></td>
+                <td class="cell" id="4"></td>
+                <td class="cell" id="5"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="6"></td>
+                <td class="cell" id="7"></td>
+                <td class="cell" id="8"></td>
+            </tr>
+        </table>
+        <br>
+        <div class="endgame">
+                <div class="text"></div>
+                <button onclick="startGame()">Restart</button>
+        </div>
+        
+        <script src="/js/minimax.js"></script>
+{{!-- {{else}}
+<a href="/login">You must login first to view this page</a>
+{{/if}} --}}
