@@ -10,7 +10,7 @@ router.get('/', withAuth, async (req, res) => {
     // });
 
     // const users = userData.map((project) => project.get({ plain: true }));
-
+// ! maybe switch nictactoe with games?
     res.render('nictactoe', {
       // users,
       logged_in: req.session.logged_in,

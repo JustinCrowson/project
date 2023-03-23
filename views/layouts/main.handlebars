@@ -5,22 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nick Plays Mini Games!</title>
-  <link href="/css/tictactoe.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="/css/tictactoe.css" rel="stylesheet">
 </head>
 
-<body>
+<body style="background-color: rgb(202, 207, 243);">
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
       <h1>
-        <span role="img" aria-label="money">💸</span>
-        {{!-- find an emoji for games --}}
-        <a href="/">Nic Cage Arcade!</a>
+        <span role="img" aria-label="money">🎰</span>
+        {{!-- find an emoji for games and make a homepage to choose which games user wants to play and set link below--}}
+        <a style="text-align:center;" href="/views/layouts/games.handlebars">Nic Cage Arcade!</a>
+        <span role="img" aria-label="money">🎱</span>
       </h1>
       {{#if logged_in}}
-      <nav>
+      <div>
         <button class="btn" id="logout">logout</button>
-      </nav>
+      </div>
       {{/if}}
     </header>
     <main class="container container-fluid mt-5">

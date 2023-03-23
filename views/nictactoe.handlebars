@@ -13,17 +13,19 @@
 
 {{!-- {{#if loggedIn}} --}}
 
-<head>
+{{!-- <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nic Tac Toe!</title>
-  <link href="../../public/css/tictactoe.css" rel="stylesheet">
-</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> --}}
+  {{!-- <title>Nic Tac Toe!</title> --}}
+  {{!-- <link href="../../public/css/tictactoe.css" rel="stylesheet"> --}}
+  {{!--! ask mo to help trouble shoot ('text/html') is not a supported stylesheet MIME type --}}
+{{!-- </head> --}}
 
-  <div class="row">Try to win against Nicolas Cage!
+  <div class="row">Try to win just like how Nicolas Cage would!
         </div>
         <br>
-        <table>
+        {{!-- <div class="card-body"> --}}
+        <table class="board">
             <tr>
                 <td class="cell" id="0"></td>
                 <td class="cell" id="1"></td>
@@ -40,11 +42,12 @@
                 <td class="cell" id="8"></td>
             </tr>
         </table>
+        </div>
         <br>
         <div class="endgame">
                 <div class="text"></div>
                 <button onclick="startGame()">Restart</button>
-        </div>
+        {{!-- </div> --}}
         
         <script src="/js/minimax.js"></script>
 {{!-- {{else}}
