@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nick Plays Mini Games!</title>
   <link href="/css/tictactoe.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 
 <body>
@@ -13,7 +14,8 @@
     <header class="display-flex justify-space-between align-center p-2">
       <h1>
         <span role="img" aria-label="money">💸</span>
-        <a href="/">Free Nic Cage!</a>
+        {{!-- find an emoji for games --}}
+        <a href="/">Nic Cage Arcade!</a>
       </h1>
       {{#if logged_in}}
       <nav>
