@@ -1,4 +1,5 @@
 var origBoard;
+
 //! switch the O for an image of cage's head
 const huPlayer = 'O';
 const aiPlayer = 'X';

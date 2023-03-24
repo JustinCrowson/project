@@ -62,3 +62,10 @@ table tr td:last-child {
     margin-top: 20px;
     padding-top: 30px;
 }
+
+.card:hover  {
+    transform: scale(1.2);
+    transform: translateX(5); 
+    /* I want this to slide to the right or just center all the content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
