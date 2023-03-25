@@ -3,7 +3,21 @@
       <div class="arcadia" >
         <button class="btn" id="logout">logout</button>
       </div>
-{{!--! next lets add a materialize nav bar linking the creators to their githubs --}}
+{{!--! find justin and george's githubs --}}
+  <nav>
+    <div style="background-color: blue; color:aliceblue;" class="nav-wrapper">
+     
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="https://github.com/DanielleSison">Danielle Sison</a></li>
+        <li><a href="https://github.com/bulkingfire">Vageli Stathatos</a></li>
+        <li><a href="https://github.com/CoreyDC">Corey Calbreath</a></li>
+        <li><a href="https://github.com/bulkingfire">Joshua Romani</a></li>
+        <li><a href="collapsible.html">Justin Crowson</a></li>
+        <li><a href="collapsible.html">George Jordan</a></li>
+        <li><a href="https://jsdrever.github.io/PortfolioJeffDrever/">Jeff Drever</a></li>
+      </ul>
+    </div>
+  </nav>
 <div id="gamer">
 
 {{!-- tic tac toe --}}
@@ -49,7 +63,7 @@
         <div class="card-image">
           <img src="images/snake.jpg">
        
-          {{!-- <span style="color:black;" class="card-title">Snake</span> --}}
+         
         </div>
         <div class="card-content">
           <p>"I am a snake" - Nic Cage</p>
@@ -67,5 +81,22 @@
   {{ user_score }} --}}
 </div>
 
-    
+
+  <div class="card">
+    <div class="card-content">
+      <p>Keep up with your scores here, you lil champion.</p>
+    </div>
+    <div class="card-tabs">
+      <ul class="tabs tabs-fixed-width">
+        <li class="tab"><a href="#test4">Hangman</a></li>
+        <li class="tab"><a class="active" href="#test5">Tic Tac Toe</a></li>
+        <li class="tab"><a href="#test6">Snake</a></li>
+      </ul>
+    </div>
+    <div class="card-content grey lighten-4">
+      <div id="test4"> {{ user_score.Hangman }} </div>
+      <div id="test5"> {{ user_score.nictactoe }} 0</div>
+      <div id="test6"> {{ user_score.snake }} </div>
+    </div>
+  </div>
  
