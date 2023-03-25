@@ -1,15 +1,17 @@
-{{!-- make some href anchors for the game options. It looks like it will be snake hangman and tic tac toe --}}
 
-
-
+      {{!-- !add logout function here --}}
+      <div class="arcadia" >
+        <button class="btn" id="logout">logout</button>
+      </div>
+{{!--! next lets add a materialize nav bar linking the creators to their githubs --}}
 <div id="gamer">
 
 {{!-- tic tac toe --}}
   <div class="row">
-    <div class="col s4 m5">
+    <div class="col s5 m4">
       <div class="card">
         <div class="card-image">
-          {{!-- <span style="color:black;" class="card-title">Nic Tac Toe</span> --}}
+          
           <img src="images/tictactoe.jpg">
         
         </div>
@@ -24,7 +26,7 @@
   {{!-- </div> --}}
 {{!-- hangman --}}
   {{!-- <div class="row"> --}}
-    <div class="col s4 m5">
+    <div class="col s5 m4">
       <div class="card">
         <div class="card-image">
           <img src="images/hangman.png">
@@ -32,7 +34,7 @@
           
         </div>
         <div class="card-content">
-          <p>Nic Cage never dies if you lose... So like don't. </p>
+          <p>Nic Cage dies if you lose... So like don't. </p>
         </div>
         <div class="card-action">
           <a href="/views/Hangman/index.html">Play Hangman</a>
@@ -42,7 +44,7 @@
   {{!-- </div> --}}
 {{!-- snake --}}
     {{!-- <div class="row"> --}}
-    <div class="col s4 m5">
+    <div class="col s5 m4">
       <div class="card">
         <div class="card-image">
           <img src="images/snake.jpg">
@@ -59,9 +61,11 @@
     </div>
   </div>
 </div>
-      {{!-- !add logout function here --}}
-      <div class="arcadia" >
-        <button class="btn" id="logout">logout</button>
-      </div>
+
+<div class="score">
+  {{!-- {{ Username }} 
+  {{ user_score }} --}}
+</div>
+
     
  

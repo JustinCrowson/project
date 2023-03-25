@@ -1,6 +1,8 @@
 var origBoard;
+// const image = document.images[0];
+//! switch the O for an image of cage's head how do i write this?
+// const huPlayer = image;
 
-//! switch the O for an image of cage's head
 const huPlayer = 'O';
 const aiPlayer = 'X';
 const winCombos = [
