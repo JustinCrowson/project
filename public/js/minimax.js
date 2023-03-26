@@ -1,33 +1,31 @@
 var origBoard;
-// const image = document.images[0];
-//! switch the O for an image of cage's head how do i write this?
+
 // const huPlayer = image;
 // todo maybe the start of the score counter
 // var scoreEl = document.querySelector("#nicScore")
 // function setScoreText() {
-//     scoreEl.textContent =nicScore;
-// }
-// function scoreCounter() {
-//     if(gameWon.player) {
-//         wins++;
-//     } else if(gameWon.aiPlayer) {
-//         loss++;
-//     } else {
-//         ties++;
-//     }
-//     setScoreText();
-// }
-
+    //     scoreEl.textContent =nicScore;
+    // }
+    // function scoreCounter() {
+    //     if(gameWon.player) {
+        //         wins++;
+        //     } else if(gameWon.aiPlayer) {
+            //         loss++;
+            //     } else {
+            //         ties++;
+            //     }
+            //     setScoreText();
+            // }
+                    
 //! function to sample random cage quotes
 // figure out how to make this work for the whole window in html
 // onclick="randomCage()"
 // var audio = new Audio('audio_file.mp3');
 // audio.play();
-// function randomCage() {
-
+// function randomCage() {                       
 // }
-
-
+//! switch the O for an image of cage's head how do i write this?
+// const cageHead = cagehead.png;
 const huPlayer = 'O';
 const aiPlayer = 'X';
 const winCombos = [
