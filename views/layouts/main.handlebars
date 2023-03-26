@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nick Plays Mini Games!</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="/css/tictactoe.css" rel="stylesheet">
+  
 </head>
 
 <body style="background-color: rgb(202, 207, 243);">
@@ -18,6 +18,11 @@
         <a class= "color" style="text-align:center;" href="games">Nic Cage Arcade!</a>
         <span role="img" aria-label="money">🎱</span>
       </h1>
+      {{#if logged_in}}
+      <div class="arcadia" >
+        <button class="btn" id="logout">logout</button>
+      </div>
+      {{/if}}
       {{#if logged_in}}
       <div class="arcadia" >
         <button class="btn" id="logout">logout</button>
