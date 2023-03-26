@@ -78,3 +78,26 @@ table tr td:last-child {
     margin: 20px;
     padding: 10px;
 }
+.borderlands {
+    border: 4px solid #333;
+}
+
+.footer {
+    background-color: rgb(15, 14, 14);
+    padding: 10px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: aliceblue;
+    border-top: 5px solid rgb(15, 14, 14);
+    
+}
+
+.color:hover
+{
+ color:#7c55d6;
+}
+.footer:hover
+{
+ color:#e73119;
+}

@@ -18,7 +18,7 @@
       </ul>
     </div>
   </nav>
-<div id="gamer">
+<div class="borderlands" id="gamer">
 
 {{!-- tic tac toe --}}
   <div class="row">
@@ -30,7 +30,7 @@
         
         </div>
         <div class="card-content">
-          <p>Nic Cage never ties. He always wins. Be like Cage and 'Face/off' against AI.</p>
+          <p> 'Face/off' against Nic Cage. It's him you're playing. For real. Just trust me dude.</p>
         </div>
         <div class="card-action">
           <a href="/nictactoe">Play Nic Tac Toe</a>
@@ -38,14 +38,13 @@
       </div>
     </div>
   {{!-- </div> --}}
+
 {{!-- hangman --}}
   {{!-- <div class="row"> --}}
     <div class="col s5 m4">
       <div class="card">
         <div class="card-image">
           <img src="images/hangman.png">
-          {{!-- <span style="color:black;" class="card-title">Hangman</span> --}}
-          
         </div>
         <div class="card-content">
           <p>Nic Cage dies if you lose... So like don't. </p>
@@ -56,6 +55,7 @@
       </div>
     </div>
   {{!-- </div> --}}
+
 {{!-- snake --}}
     {{!-- <div class="row"> --}}
     <div class="col s5 m4">
@@ -76,13 +76,8 @@
   </div>
 </div>
 
-<div class="score">
-  {{!-- {{ Username }} 
-  {{ user_score }} --}}
-</div>
-
-
-  <div class="card">
+{{!-- ! Figure out how to build a score counter and what to call them for cache validation --}}
+  <div class="card color">
     <div class="card-content">
       <p>Keep up with your scores here, you lil champion.</p>
     </div>
@@ -94,9 +89,15 @@
       </ul>
     </div>
     <div class="card-content grey lighten-4">
-      <div id="test4"> {{ user_score.Hangman }} </div>
+      <div id="test4"> {{ user_score.Hangman }} 0</div>
       <div id="test5"> {{ user_score.nictactoe }} 0</div>
-      <div id="test6"> {{ user_score.snake }} </div>
+      <div id="test6"> {{ user_score.snake }} 0</div>
     </div>
   </div>
+    <footer class="footer">
+        <p>
+            &copy; 2023 Seriously Sticky Students, All rights reserved.
+        </p>
+    </footer>
+  <script src="/js/login.js"></script>
  
