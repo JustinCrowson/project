@@ -1,56 +1,107 @@
-{{!-- make some href anchors for the game options. It looks like it will be snake hangman and tic tac toe --}}
 
-
-
+      {{!-- !add logout function here --}}
+      <div class="arcadia" >
+        <button class="btn" id="logout"> <a style="color:aliceblue;" href="https://youtu.be/dQw4w9WgXcQ">  logout</button></a>
+      </div>
+{{!--! find justin and george's githubs --}}
+  <nav>
+    <div style="background-color: blue; color:aliceblue;" class="nav-wrapper">
+     
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="https://github.com/DanielleSison">Danielle Sison</a></li>
+        <li><a href="https://github.com/bulkingfire">Vageli Stathatos</a></li>
+        <li><a href="https://github.com/CoreyDC">Corey Calbreath</a></li>
+        <li><a href="https://github.com/DongleJosh">Joshua Romani</a></li>
+        <li><a href="collapsible.html">Justin Crowson</a></li>
+        <li><a href="collapsible.html">George Jordan</a></li>
+        <li><a href="https://jsdrever.github.io/PortfolioJeffDrever/">Jeff Drever</a></li>
+      </ul>
+    </div>
+  </nav>
+<div class="borderlands" id="gamer">
 
 {{!-- tic tac toe --}}
   <div class="row">
-    <div class="col s12 m7">
+    <div class="col s5 m4">
       <div class="card">
         <div class="card-image">
-          <img src="images/sample-1.jpg">
-          <span class="card-title">Nic Tac Toe</span>
+          
+          <img src="images/tictactoe.jpg">
+        
         </div>
         <div class="card-content">
-          <p>Something clever about nic Cage</p>
+          <p> 'Face/off' against Nic Cage. It's him you're playing. For real. Just trust me dude.</p>
         </div>
         <div class="card-action">
-          <a href="/views/nictactoe.handlebars">This is a link</a>
+          <a href="/nictactoe">Play Nic Tac Toe</a>
         </div>
       </div>
     </div>
-  </div>
+  {{!-- </div> --}}
+
 {{!-- hangman --}}
-    <div class="row">
-    <div class="col s12 m7">
+  {{!-- <div class="row"> --}}
+    <div class="col s5 m4">
       <div class="card">
         <div class="card-image">
-          <img src="images/sample-1.jpg">
-          <span class="card-title">Hangman</span>
+          <img src="images/hangman.png">
         </div>
         <div class="card-content">
-          <p>Nic Cage dies if you lose</p>
+          <p>Nic Cage dies if you lose... So, like don't. </p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="/views/Hangman/index.html">Play Hangman</a>
         </div>
       </div>
     </div>
-  </div>
+  {{!-- </div> --}}
+
 {{!-- snake --}}
-    <div class="row">
-    <div class="col s12 m7">
+    {{!-- <div class="row"> --}}
+    <div class="col s5 m4">
       <div class="card">
         <div class="card-image">
-          <img src="images/sample-1.jpg">
-          <span class="card-title">Snake</span>
+          <img src="images/snake.jpg">
+       
+         
         </div>
         <div class="card-content">
           <p>"I am a snake" - Nic Cage</p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="#">Play Snake</a>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+{{!-- ! Figure out how to build a score counter and what to call them for cache validation --}}
+{{!-- todo fix the tabs. Not working. displaying all options...  --}}
+  <div class="card color">
+    <div class="card-content">
+      <p>Keep up with your scores here, you lil champion.</p>
+    </div>
+    <div class="card-tabs">
+      <ul class="tabs tabs-fixed-width">
+        <li class="tab"><a href="#test4">Hangman</a></li>
+        <li class="tab"><a class="active" href="#nicScore">Tic Tac Toe</a></li>
+        <li class="tab"><a href="#test6">Snake</a></li>
+      </ul>
+    </div>
+    {{!-- ! i need this to have an option for wins loss and ties i have no idea if this is correct --}}
+    <div class="card-content grey lighten-4">
+      <div id="test4"> {{ score.Hangman }} 0</div>
+      <div id="nicScore"> {{ score.nictactoe.wins }} wins</div>
+      <div id="nicScore"> {{ score.nictactoe.loss }} loss</div>
+      <div id="nicScore"> {{ nictactoe.ties }}ties</div>
+      <div id="test6"> {{ score.snake }} 0</div>
+    </div>
+  </div>
+    <footer class="footer">
+        <p>
+            &copy; 2023 Seriously Sticky Student Solutions Services Inc, All rights reserved.
+        </p>
+    </footer>
+  <script src="/js/login.js"></script>
+ 
