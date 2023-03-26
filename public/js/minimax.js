@@ -28,6 +28,13 @@ var origBoard;
 // }
 
 
+var playerScoreField = document.querySelector('.player-score')
+var aiScoreField = document.querySelector('.ai-score')
+var playerScore = 0
+var aiScore = 0
+let audio = new Audio('/sound/bunny.mp3')
+
+
 const huPlayer = 'O';
 const aiPlayer = 'X';
 const winCombos = [
@@ -90,7 +97,20 @@ function gameOver(gameWon) {
         cells[i].removeEventListener('click', turnClick, false);
     }
     declareWinner(gameWon.player == huPlayer ? "You win!" : "You lose.");
+
+    if (gameWon.player = huPlayer){
+        aiScore++;
+        aiScoreField.innerText = aiScore;
+        audio.play()
+       
+    } else {
+        playerScore++;
+        playerScoreField.innerText = playerScore;        
+    }
+
+
 }
+
 
 function declareWinner(who) {
     document.querySelector(".endgame").style.display = "block";

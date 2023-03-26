@@ -35,6 +35,7 @@ const signupFormHandler = async (event) => {
 
     if (response.ok) {
       document.location.replace('/games');
+      alert('You have successfully signed up!')
     } else {
       alert('Failed to sign up.');
     }
