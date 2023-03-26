@@ -2,6 +2,22 @@ var origBoard;
 // const image = document.images[0];
 //! switch the O for an image of cage's head how do i write this?
 // const huPlayer = image;
+// todo maybe start of the score counter
+// var scoreEl = document.querySelector("#test5")
+// function setScoreText() {
+//     scoreEl.textContent =score;
+// }
+// function scoreCounter() {
+//     if(gameWon.player) {
+//         wins++;
+//     } else if(gameWon.aiPlayer) {
+//         loss++;
+//     } else {
+//         ties++;
+//     }
+//     setScoreText();
+// }
+
 
 const huPlayer = 'O';
 const aiPlayer = 'X';
