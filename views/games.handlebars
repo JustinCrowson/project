@@ -1,7 +1,7 @@
 
       {{!-- !add logout function here --}}
       <div class="arcadia" >
-        <button class="btn" id="logout">logout</button>
+        <button class="btn" id="logout"> <a style="color:aliceblue;" href="https://youtu.be/dQw4w9WgXcQ">  logout</button></a>
       </div>
 {{!--! find justin and george's githubs --}}
   <nav>
@@ -47,7 +47,7 @@
           <img src="images/hangman.png">
         </div>
         <div class="card-content">
-          <p>Nic Cage dies if you lose... So like don't. </p>
+          <p>Nic Cage dies if you lose... So, like don't. </p>
         </div>
         <div class="card-action">
           <a href="/views/Hangman/index.html">Play Hangman</a>
@@ -77,6 +77,7 @@
 </div>
 
 {{!-- ! Figure out how to build a score counter and what to call them for cache validation --}}
+{{!-- todo fix the tabs. Not working. displaying all options...  --}}
   <div class="card color">
     <div class="card-content">
       <p>Keep up with your scores here, you lil champion.</p>
@@ -84,13 +85,16 @@
     <div class="card-tabs">
       <ul class="tabs tabs-fixed-width">
         <li class="tab"><a href="#test4">Hangman</a></li>
-        <li class="tab"><a class="active" href="#test5">Tic Tac Toe</a></li>
+        <li class="tab"><a class="active" href="#nicScore">Tic Tac Toe</a></li>
         <li class="tab"><a href="#test6">Snake</a></li>
       </ul>
     </div>
+    {{!-- ! i need this to have an option for wins loss and ties i have no idea if this is correct --}}
     <div class="card-content grey lighten-4">
       <div id="test4"> {{ score.Hangman }} 0</div>
-      <div id="test5"> {{ score.nictactoe }} 0</div>
+      <div id="nicScore"> {{ score.nictactoe.wins }} wins</div>
+      <div id="nicScore"> {{ score.nictactoe.loss }} loss</div>
+      <div id="nicScore"> {{ nictactoe.ties }}ties</div>
       <div id="test6"> {{ score.snake }} 0</div>
     </div>
   </div>
