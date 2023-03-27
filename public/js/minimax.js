@@ -1,5 +1,3 @@
-var origBoard;
-
 // const huPlayer = image;
 // todo maybe the start of the score counter
 // var scoreEl = document.querySelector("#nicScore")
@@ -25,14 +23,33 @@ var origBoard;
 // function randomCage() {                       
 // }
 
+
+//! switch the O for an image of cage's head how do i write this?
+// const cageHead = cagehead.png;
+
+// const huPlayer = imageRender();
+
+// function imageRender(err,status){
+//     var img = '<img src="/images/cagehead.png">';
+
+//     if (err) {
+//         console.log(err)
+//       }
+      
+//     document.querySelectorAll('image-container').innerHTML = img
+// }
+
+
+
+// const huPlayer = document.getElementById('image-container'); 
+// huPlayer.innerHTML = '<img src="/images/cagehead.png">'; 
+
+var origBoard;
 var playerScoreField = document.querySelector('.player-score');
 var aiScoreField = document.querySelector('.ai-score');
 var playerScore = 0
 var aiScore = 0
 let audio = new Audio('/sound/bunny.mp3')
-//! switch the O for an image of cage's head how do i write this?
-// const cageHead = cagehead.png;
-
 
 const huPlayer = 'O';
 const aiPlayer = 'X';
