@@ -24,11 +24,6 @@ var origBoard;
 // audio.play();
 // function randomCage() {                       
 // }
-<<<<<<< HEAD
-//! switch the O for an image of cage's head how do i write this?
-// const cageHead = cagehead.png;
-=======
-
 
 var playerScoreField = document.querySelector('.player-score');
 var aiScoreField = document.querySelector('.ai-score');
@@ -37,6 +32,8 @@ var aiScore = 0
 let audio = new Audio('/sound/bunny.mp3')
 //! switch the O for an image of cage's head how do i write this?
 // const cageHead = cagehead.png;
+
+
 const huPlayer = 'O';
 const aiPlayer = 'X';
 const winCombos = [
