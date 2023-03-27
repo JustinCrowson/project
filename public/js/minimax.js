@@ -24,8 +24,20 @@ var origBoard;
 // audio.play();
 // function randomCage() {                       
 // }
+<<<<<<< HEAD
 //! switch the O for an image of cage's head how do i write this?
 // const cageHead = cagehead.png;
+=======
+
+
+var playerScoreField = document.querySelector('.player-score')
+var aiScoreField = document.querySelector('.ai-score')
+var playerScore = 0
+var aiScore = 0
+let audio = new Audio('/sound/bunny.mp3')
+
+
+>>>>>>> 01fcf8b (Added initial functional hangman game and rerouting)
 const huPlayer = 'O';
 const aiPlayer = 'X';
 const winCombos = [
@@ -88,7 +100,20 @@ function gameOver(gameWon) {
         cells[i].removeEventListener('click', turnClick, false);
     }
     declareWinner(gameWon.player == huPlayer ? "You win!" : "You lose.");
+
+    if (gameWon.player = huPlayer){
+        aiScore++;
+        aiScoreField.innerText = aiScore;
+        audio.play()
+       
+    } else {
+        playerScore++;
+        playerScoreField.innerText = playerScore;        
+    }
+
+
 }
+
 
 function declareWinner(who) {
     document.querySelector(".endgame").style.display = "block";
