@@ -1,7 +1,7 @@
 
-      {{!-- !add logout function here --}}
+      {{!-- !add logout function here. it doesnt actually work and may be a source of bug later. --}}
       <div class="arcadia" >
-        <button class="btn" id="logout"> <a style="color:aliceblue;" href="https://youtu.be/dQw4w9WgXcQ">  logout</button></a>
+        <button class="btn" id="logout"> <a style="color:aliceblue;" href="login">  logout</button></a>
       </div>
 {{!--! find justin and george's githubs --}}
   <nav>
@@ -21,9 +21,10 @@
 <div class="borderlands" id="gamer">
 
 {{!-- tic tac toe --}}
-  <div class="row">
+
+  <div  class="row">
     <div class="col s5 m4">
-      <div class="card">
+      <div id="card" class="card">
         <div class="card-image">
           
           <img src="images/tictactoe.jpg">
@@ -37,12 +38,12 @@
         </div>
       </div>
     </div>
-  {{!-- </div> --}}
+  
 
 {{!-- hangman --}}
-  {{!-- <div class="row"> --}}
+  
     <div class="col s5 m4">
-      <div class="card">
+      <div id="card"  class="card">
         <div class="card-image">
           <img src="images/hangman.png">
         </div>
@@ -54,12 +55,12 @@
         </div>
       </div>
     </div>
-  {{!-- </div> --}}
+ 
 
 {{!-- snake --}}
-    {{!-- <div class="row"> --}}
+  
     <div class="col s5 m4">
-      <div class="card">
+      <div id="card" class="card">
         <div class="card-image">
           <img src="images/snake.jpg">
        
@@ -78,8 +79,8 @@
 
 {{!-- ! Figure out how to build a score counter and what to call them for cache validation --}}
 {{!-- todo fix the tabs. Not working. displaying all options...  --}}
-  <div class="card color">
-    <div class="card-content">
+  <div id="card"  class="card color">
+    <div id= "card-content" class="card-content">
       <p>Keep up with your scores here, you lil champion.</p>
     </div>
     <div class="card-tabs">
@@ -90,7 +91,7 @@
       </ul>
     </div>
     {{!-- ! i need this to have an option for wins loss and ties i have no idea if this is correct --}}
-    <div class="card-content grey lighten-4">
+    <div id="card-content" class="card-content black lighten-4">
       <div id="test4"> {{ score.Hangman }} 0</div>
       <div id="nicScore"> {{ score.nictactoe.wins }} wins</div>
       <div id="nicScore"> {{ score.nictactoe.loss }} loss</div>
@@ -104,4 +105,5 @@
         </p>
     </footer>
   <script src="/js/login.js"></script>
+  <script src="/js/logout.js"></script>
  

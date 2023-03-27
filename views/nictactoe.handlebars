@@ -9,11 +9,11 @@
         </div>
 
           <div>
-            <h2>Player Score: <span class="player-score"></span></h2>
-            <h2>AI Score:  <span class="ai-score"></span></h2>
+            <h2>Player Score: <span id="player-score"></span></h2>
+            <h2>AI Score:  <span id="ai-score"></span></h2>
           </div>
         <br>
-        {{!-- <div class="card-body"> --}}
+        
         <table class="board">
             <tr>
                 <td class="cell" id="0"></td>
@@ -36,7 +36,7 @@
         <div class="endgame">
                 <div class="text"></div>
                 <button onclick="startGame()">Restart</button>
-        {{!-- </div> --}}
+        
         
         <script src="/js/minimax.js"></script>
 {{!-- {{else}}
