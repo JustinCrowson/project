@@ -70,11 +70,11 @@ table tr td:last-child {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.card {
+#card {
     border-radius: 10px;
     font-size: 20px;
     color: white;
-    background-color: #333;
+    background-color: #1d1c1c;
     margin: 20px;
     padding: 10px;
 }
@@ -93,7 +93,7 @@ table tr td:last-child {
     
 }
 
-.color:hover
+#card-content:hover
 {
  color:#7c55d6;
 }
