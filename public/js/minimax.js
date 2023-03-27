@@ -35,9 +35,14 @@ var aiScoreField = document.querySelector('.ai-score')
 var playerScore = 0
 var aiScore = 0
 let audio = new Audio('/sound/bunny.mp3')
+<<<<<<< HEAD
 
 
 >>>>>>> 01fcf8b (Added initial functional hangman game and rerouting)
+=======
+//! switch the O for an image of cage's head how do i write this?
+// const cageHead = cagehead.png;
+>>>>>>> 820f7a0 (commit)
 const huPlayer = 'O';
 const aiPlayer = 'X';
 const winCombos = [
