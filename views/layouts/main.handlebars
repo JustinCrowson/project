@@ -7,7 +7,7 @@
   <title>Nick Plays Mini Games!</title>
   <link rel="stylesheet" href="/css/tictactoe.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  
+  <link href="/css/tictactoe.css" rel="stylesheet">     
 </head>
 
 <body style="background-color: rgb(202, 207, 243);">
@@ -21,6 +21,11 @@
       {{#if logged_in}}
       <div class="arcadia" >
         <button class="btn" id="logout">logout</button>
+      </div>
+      {{/if}}
+      {{#if logged_in}}
+      <div class="arcadia" >
+        <button class="btn" id="logout"> <a style="color:aliceblue;" href="/games">Back to game page</button></a>
       </div>
       {{/if}}
     </header>
