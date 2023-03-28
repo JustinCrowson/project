@@ -70,7 +70,7 @@
           <p>"I am a snake" - Nic Cage</p>
         </div>
         <div class="card-action">
-          <a href="#">Play Snake</a>
+          <a href="/snake">Play Snake</a>
         </div>
       </div>
     </div>
@@ -93,10 +93,26 @@
     {{!-- ! i need this to have an option for wins loss and ties i have no idea if this is correct --}}
     <div id="card-content" class="card-content black lighten-4">
       <div id="test4"> {{ score.Hangman }} 0</div>
-      <div id="nicScore"> {{ score.nictactoe.wins }} wins</div>
-      <div id="nicScore"> {{ score.nictactoe.loss }} loss</div>
-      <div id="nicScore"> {{ nictactoe.ties }}ties</div>
+      <div id="nicScore">wins: {{ score.nictactoe.wins }},loss: {{ score.nictactoe.loss }}, ties: {{ nictactoe.ties }}  </div>
       <div id="test6"> {{ score.snake }} 0</div>
+    </div>
+  </div>
+
+   <div id="card" class="row">
+    <div class="col s12 m12">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span style="text-align:center;" class="card-title">Scoreboard</span>
+          <p>Hey {{ login.name }}, good job on those high scores. Im so proud of you.</p>
+        </div>
+        <div class="card-action">
+          <p>Nic-Tac-Toe: wins- {{ playerScore.nictactoe.wins }},loss- {{ playerScore.nictactoe.loss }}, ties- {{ playerScore.nictactoe.ties }} </p>
+          <p>Hangman: {{ games.hangman.win }} </p>
+          <p>Snake: {{ games.snake.score }} </p>
+          {{!-- <a href="#">This is a link</a>
+          <a href="#">This is a link</a> --}}
+        </div>
+      </div>
     </div>
   </div>
     <footer class="footer">

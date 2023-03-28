@@ -34,6 +34,16 @@ router.get('/nictactoe', withAuth, async (req, res) => {
   }
 });
 
+router.get('/snake', withAuth, async (req, res) => {
+  try {
+    res.render('snake', {
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.get('/hangman', withAuth, async (req, res) => {
   try {
     res.render('hangman', {
