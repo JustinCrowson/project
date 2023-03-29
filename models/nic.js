@@ -12,8 +12,10 @@ NicTacToe.init(
             autoIncrement: true,
         },
         wins: {
-            
-        }
+          type: DataTypes.INTEGER,
+
+        },
+
     },
     {
         sequelize,

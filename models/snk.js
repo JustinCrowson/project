@@ -12,7 +12,7 @@ Snake.init(
             autoIncrement: true,
         },
         score: {
-            
+            type: DataTypes.INTEGER,
         }
     },
     {

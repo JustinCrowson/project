@@ -1,9 +1,9 @@
 
-      {{!-- !add logout function here. it doesnt actually work and may be a source of bug later. --}}
+ 
       <div class="arcadia" >
         <button class="btn" id="logout"> <a style="color:aliceblue;" href="login">  logout</button></a>
       </div>
-{{!--! find justin and george's githubs --}}
+
   <nav>
     <div style="background-color: blue; color:aliceblue;" class="nav-wrapper">
      
@@ -19,7 +19,9 @@
     </div>
   </nav>
 <div class="borderlands" id="gamer">
-
+<p>
+  {{ user.id, nicWins }}
+</p>
 {{!-- tic tac toe --}}
 
   <div  class="row">
@@ -106,7 +108,7 @@
           <p>Hey {{ login.name }}, good job on those high scores. Im so proud of you.</p>
         </div>
         <div class="card-action">
-          <p>Nic-Tac-Toe: wins- {{ playerScore.nictactoe.wins }},loss- {{ playerScore.nictactoe.loss }}, ties- {{ playerScore.nictactoe.ties }} </p>
+          <p>Nic-Tac-Toe: wins- {{ playerScore.nictactoe.wins }} </p>
           <p>Hangman: {{ games.hangman.win }} </p>
           <p>Snake: {{ games.snake.score }} </p>
           {{!-- <a href="#">This is a link</a>

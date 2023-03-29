@@ -4,12 +4,18 @@ const nic = require('./nic');
 const snk = require('./snk');
 
 //! help
-Gallery.hasMany(Painting, {
-    foreignKey: 'gallery_id',
-  });
+
   
-  Painting.belongsTo(Gallery, {
-    foreignKey: 'gallery_id',
+  nic.belongsTo(User, {
+    foreignKey: 'user_id',
+  });
+
+  hang.belongsTo(User, {
+    foreignKey: 'user_id',
+  });
+
+  snk.belongsTo(User, {
+    foreignKey: 'user_id',
   });
 
 

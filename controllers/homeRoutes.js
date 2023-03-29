@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { response } = require('express');
-const { User } = require('../models');
+const { User, nic } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
@@ -24,15 +24,26 @@ router.get('/', withAuth, async (req, res) => {
 //   }
 // });
 
-router.get('/nictactoe', withAuth, async (req, res) => {
-  try {
+router.get('/nictactoe/:user_id', withAuth, async (req, res) => {
+  try { 
+    const nicData = await nic.findOne({
+      where:  {
+        user_id: req.params.user_id, 
+      }
+    });
+
+     const nicWins = nicData.get({ plain: true });
+
     res.render('nictactoe', {
+      ...nicWins,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
     res.status(500).json(err);
   }
 });
+
+
 
 router.get('/snake', withAuth, async (req, res) => {
   try {
