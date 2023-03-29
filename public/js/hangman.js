@@ -39,13 +39,13 @@ window.onload = function () {
     var space; // Number of spaces in word '-'
     var win = 0;
   
-    // Get elements
+    // Get elements on the handle bar pages 
     var showLives = document.getElementById("mylives");
     var showCatagory = document.getElementById("scatagory");
     var hints = document.getElementById("hint");
     var showClue = document.getElementById("clue");
   
-    // create alphabet ul
+    // create alphabet ul for the letters on the page 
     var buttons = function () {
       myButtons = document.getElementById("buttons");
       letters = document.createElement("ul");
@@ -61,19 +61,16 @@ window.onload = function () {
       }
     };
   
-    // Select Catagory
     var selectCat = function () {
       if (cata === topics[0]) {
         catagoryName.innerHTML =
-          "The Chosen Category Is Premier League Football Teams";
+          "The catagory is: Nicolas Cage";
       } else if (cata === topics[1]) {
-        catagoryName.innerHTML = "The Chosen Category Is Films";
-      } else if (cata === topics[2]) {
-        catagoryName.innerHTML = "The Chosen Category Is Cities";
-      }
+        catagoryName.innerHTML = "The catagory is: Nicolas Cage";
+      } 
     };
   
-    // Create geusses ul
+    // Created the new guesses tab that needs to be on the html
     result = function () {
       wordHolder = document.getElementById("hold");
       correct = document.createElement("ul");
@@ -95,7 +92,7 @@ window.onload = function () {
       }
     };
   
-    // Show lives
+    // below is the lives section that needs to be counted 
     comments = function () {
       showLives.innerHTML = "You have " + life + " guesses left!";
       if (life < 1) {
@@ -109,7 +106,7 @@ window.onload = function () {
       }
     };
   
-    // Animate man
+    // Animate the hang man on the screen 
     var animate = function () {
       var drawMe = life;
       drawArray[drawMe]();
