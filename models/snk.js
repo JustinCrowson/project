@@ -5,13 +5,13 @@ class Snake extends Model {}
 
 Snake.init(
     {
-        id: {
+        snake_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true,
         },
-        score: {
+        snake_score: {
             type: DataTypes.INTEGER,
         }
     },
