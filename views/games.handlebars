@@ -6,7 +6,6 @@
 
   <nav>
     <div style="background-color: blue; color:aliceblue;" class="nav-wrapper">
-     
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="https://github.com/DanielleSison">Danielle Sison</a></li>
         <li><a href="https://github.com/bulkingfire">Vageli Stathatos</a></li>
@@ -20,9 +19,13 @@
   </nav>
 <div class="borderlands" id="gamer">
 <p>
-  {{ user.id, nicWins }}
+  {{ user.id  }}
+  {{ nicWins }}
 </p>
+
+
 {{!-- tic tac toe --}}
+
 
   <div  class="row">
     <div class="col s5 m4">
@@ -79,9 +82,9 @@
   </div>
 </div>
 
-{{!-- ! Figure out how to build a score counter and what to call them for cache validation --}}
+
 {{!-- todo fix the tabs. Not working. displaying all options...  --}}
-  <div id="card"  class="card color">
+  {{!-- <div id="card"  class="card color">
     <div id= "card-content" class="card-content">
       <p>Keep up with your scores here, you lil champion.</p>
     </div>
@@ -98,7 +101,7 @@
       <div id="nicScore">wins: {{ score.nictactoe.wins }},loss: {{ score.nictactoe.loss }}, ties: {{ nictactoe.ties }}  </div>
       <div id="test6"> {{ score.snake }} 0</div>
     </div>
-  </div>
+  </div> --}}
 
    <div id="card" class="row">
     <div class="col s12 m12">
@@ -111,8 +114,6 @@
           <p>Nic-Tac-Toe: wins- {{ playerScore.nictactoe.wins }} </p>
           <p>Hangman: {{ games.hangman.win }} </p>
           <p>Snake: {{ games.snake.score }} </p>
-          {{!-- <a href="#">This is a link</a>
-          <a href="#">This is a link</a> --}}
         </div>
       </div>
     </div>
