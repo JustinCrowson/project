@@ -69,8 +69,8 @@ body {
     list-style: none;
     width: 35px;
     height: 30px;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 10px;
     background: lightcoral;
     color: base-color;
     cursor: pointer;
