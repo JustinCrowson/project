@@ -9,8 +9,7 @@ if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(
     'nictactoe_db',
     'root',
-    'D!v4St4rz@13',
-
+    'Oldred1206',
     {
       host: '127.0.0.1',
       dialect: 'mysql',

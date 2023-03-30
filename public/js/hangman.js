@@ -1,5 +1,5 @@
 window.onload = function () {
-  var alphas = [
+var alphas = [
     "a",
     "b",
     "c",
