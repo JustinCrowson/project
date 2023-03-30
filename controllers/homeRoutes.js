@@ -5,7 +5,7 @@ const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
   try {
-    res.render('games', {
+    res.render('login', {
       logged_in: req.session.logged_in,
     });
   } catch (err) {
@@ -62,14 +62,11 @@ router.get('/hangman', withAuth, async (req, res) => {
 
 router.get('/games', withAuth, async (req, res) => {
   try {
-
     const userData = await User.findOne({
       where: {
         id: req.session.user_id
-      }
-        
-   
-    })
+      }        
+    });
     console.log(userData)
     res.render('games', { 
       user: userData.get({ plain: true}),
