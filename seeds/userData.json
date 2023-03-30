@@ -1,5 +1,3 @@
-
-
 [
     {
       "name": "Danielle",
@@ -16,6 +14,54 @@
       "hangScore": 1,
       "nicScore": 1,
       "snakeScore": 1
+    },
+    {
+      "name": "Jeff",
+      "email": "jeff@yahoo.com",
+      "password": "password",
+      "hangScore": 3,
+      "nicScore": 3,
+      "snakeScore": 3
+    },
+    {
+      "name": "Corey",
+      "email": "corey@yahoo.com",
+      "password": "password1",
+      "hangScore": 1,
+      "nicScore": 2,
+      "snakeScore": 1
+    },    
+    {
+      "name": "Vageli",
+      "email": "vageli@yahoo.com",
+      "password": "password2",
+      "hangScore": 1,
+      "nicScore": 2,
+      "snakeScore": 2
+    },
+    {
+      "name": "George",
+      "email": "george@yahoo.com",
+      "password": "password3",
+      "hangScore": 1,
+      "nicScore": 2,
+      "snakeScore": 2
+    },
+    {
+      "name": "Justin",
+      "email": "justin@yahoo.com",
+      "password": "password4",
+      "hangScore": 1,
+      "nicScore": 1,
+      "snakeScore": 1
+    },
+    {
+      "name": "Josh",
+      "email": "josh@yahoo.com",
+      "password": "password5",
+      "hangScore": 1,
+      "nicScore": 1,
+      "snakeScore": 2
     }
   ]
   

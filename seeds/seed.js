@@ -9,9 +9,8 @@ const userData = require('./userData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
+  
   console.log('\n----- DATABASE SYNCED -----\n');
-
-
 
   await seedSnake();
   console.log('\n----- SNAKE SEEDED -----\n');
