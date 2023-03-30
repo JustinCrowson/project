@@ -35,6 +35,27 @@ User.init(
         len: [8],
       },
     },
+    hangScore: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'Hangman',
+        key: 'id',
+      },
+    },
+    snakeScore: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'Snake',
+        key: 'id',
+      },
+    },
+    nicScore: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'nictactoe',
+        key: 'id',
+      },
+    },
   },
   {
     hooks: {

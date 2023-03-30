@@ -1,13 +1,21 @@
+
+
 [
     {
       "name": "Danielle",
       "email": "daniellesison@yahoo.com",
-      "password": "password1234"
+      "password": "password1234",
+      "hangScore": 2,
+      "nicScore": 2,
+      "snakeScore": 2
     },
     {
       "name": "Nick",
       "email": "nic@nic.com",
-      "password": "password12345"
+      "password": "password12345",
+      "hangScore": 1,
+      "nicScore": 1,
+      "snakeScore": 1
     }
   ]
   

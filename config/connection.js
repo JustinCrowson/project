@@ -7,7 +7,6 @@ if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
   sequelize = new Sequelize(
- 
     'nictactoe_db',
     'root',
     'Oldred1206',
