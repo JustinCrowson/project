@@ -68,14 +68,9 @@ body {
     margin: 0 10px 10px 0;
     list-style: none;
     width: 35px;
-<<<<<<< HEAD
-    height: 35px;
-    padding-top: 5px;
-=======
     height: 30px;
     padding-top: 10px;
     padding-bottom: 5px;
->>>>>>> 47f2146f911ac585b560454a8ea90ab9e40c3b50
     background: lightcoral;
     color: base-color;
     cursor: pointer;

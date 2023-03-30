@@ -112,7 +112,7 @@ window.onload = function () {
       drawArray[drawMe]();
     };
   
-    // Hangman
+    // Hangmanfunctionality 
     canvas = function () {
       myStickman = document.getElementById("stickman");
       context = myStickman.getContext("2d");
@@ -207,7 +207,7 @@ window.onload = function () {
       };
     };
   
-    // Play
+    // Play function has been added
     play = function () {
       topics = [
         [
@@ -240,7 +240,7 @@ window.onload = function () {
   
     play();
   
-    // Hint
+    // Clue functionality has been added 
   
     hint.onclick = function () {
       hints = [
@@ -266,7 +266,7 @@ window.onload = function () {
       showClue.innerHTML = "Clue: - " + hints[catagoryIndex][hintIndex];
     };
   
-    // Reset
+    // Reset button and functionality had been added 
   
     document.getElementById("reset").onclick = function () {
       correct.parentNode.removeChild(correct);
