@@ -1,11 +1,11 @@
 var blockSize = 25;
-var total_row = 25; //total row number
-var total_col = 25; //total column number
+var total_row = 17; //total row number
+var total_col = 17; //total column number
 var board;
 var context;
-​
+
 var score = 0
-​
+
 var snakeX = blockSize * 5;
 var snakeY = blockSize * 5;
  
@@ -44,11 +44,6 @@ function update() {
     context.fillRect(0, 0, board.width, board.height);
  
     // Set food color and position
-    
-    
-    // const img = document.getElementById('test');
-    // const pat = context.createPattern(img, 'no-repeat');
-    // context.fillStyle = pat
     context.fillStyle = "red"
     context.fillRect(foodX, foodY, blockSize, blockSize);
  
@@ -56,7 +51,7 @@ function update() {
         snakeBody.push([foodX, foodY]);
         placeFood();
         score += 1;
-        document.getElementById('score').innerHTML = '&nbsp;' + score;
+        document.getElementById('score-actual').innerHTML = '&nbsp;' + score;
     }
  
     // body of snake will grow
@@ -75,7 +70,7 @@ function update() {
     for (let i = 0; i < snakeBody.length; i++) {
         context.fillRect(snakeBody[i][0], snakeBody[i][1], blockSize, blockSize);
     }
-​
+
     if (snakeX < 0
         || snakeX > total_col * blockSize
         || snakeY < 0

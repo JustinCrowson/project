@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { snk } = require('../../models');
 
 // Add score to database
-router.post('/snake', async (req, res) => {
+router.post('/snake/:id', async (req, res) => {
   try {
     const snakeData = await snk.create({
       snake_score: req.body.snake_score
@@ -20,7 +20,7 @@ router.post('/snake', async (req, res) => {
 });
 
 // Update score in database
-router.put('/snake', async (req, res) => {
+router.put('/snake/:id', async (req, res) => {
     try {
         const snakeData = await snk.update({
             snake_score: req.body.snake_score
