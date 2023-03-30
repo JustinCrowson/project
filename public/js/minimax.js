@@ -86,7 +86,24 @@ function turnClick(square) {
 
 function turn(squareId, player) {
     origBoard[squareId] = player;
-    document.getElementById(squareId).innerText = player;
+    if (player === huPlayer) {
+        console.log(squareId)
+        const currentCell = document.getElementById(squareId)
+        const img = document.createElement("img");
+        img.src = "/images/cagehead.png"
+        img.width = "150"
+        img.height = "150"
+        // img.src = "http://www.java2s.com/ref/javascript/image4.png";
+        currentCell.append(img)
+    } else {
+        const currentCell = document.getElementById(squareId)
+        const img = document.createElement("img");
+        img.src = "/images/xsymbol.png"
+        img.width = "100"
+        img.height = "100"
+        currentCell.append(img)
+    }
+    // document.getElementById(squareId).innerText = player;
     let gameWon = checkWin(origBoard, player)
     if (gameWon) gameOver(gameWon)
 }

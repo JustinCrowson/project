@@ -18,11 +18,6 @@
     </div>
   </nav>
 <div class="borderlands" id="gamer">
-<p>
-  {{ user.id  }}
-  {{ nicWins }}
-</p>
-
 
 {{!-- tic tac toe --}}
 
@@ -83,26 +78,6 @@
 </div>
 
 
-{{!-- todo fix the tabs. Not working. displaying all options...  --}}
-  {{!-- <div id="card"  class="card color">
-    <div id= "card-content" class="card-content">
-      <p>Keep up with your scores here, you lil champion.</p>
-    </div>
-    <div class="card-tabs">
-      <ul class="tabs tabs-fixed-width">
-        <li class="tab"><a href="#test4">Hangman</a></li>
-        <li class="tab"><a class="active" href="#nicScore">Tic Tac Toe</a></li>
-        <li class="tab"><a href="#test6">Snake</a></li>
-      </ul>
-    </div>
-    {{!-- ! i need this to have an option for wins loss and ties i have no idea if this is correct --}}
-    <div id="card-content" class="card-content black lighten-4">
-      <div id="test4"> {{ score.Hangman }} 0</div>
-      <div id="nicScore">wins: {{ score.nictactoe.wins }},loss: {{ score.nictactoe.loss }}, ties: {{ nictactoe.ties }}  </div>
-      <div id="test6"> {{ score.snake }} 0</div>
-    </div>
-  </div> --}}
-
    <div id="card" class="row">
     <div class="col s12 m12">
       <div class="card blue-grey darken-1">
@@ -111,9 +86,9 @@
           <p>Hey {{ user.name }}, good job on those high scores. Im so proud of you.</p>
         </div>
         <div class="card-action">
-          <p>Nic-Tac-Toe: wins- {{ playerScore.nictactoe.wins }} </p>
-          <p>Hangman: {{ games.hangman.win }} </p>
-          <p>Snake: {{ games.snake.score }} </p>
+          <p>Nic-Tac-Toe: {{ user.nicScore }} </p>
+          <p>Hangman: {{ user.hangScore }} </p>
+          <p>Snake: {{ user.snakeScore }} </p>
         </div>
       </div>
     </div>
