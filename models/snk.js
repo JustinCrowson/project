@@ -22,4 +22,5 @@ Snake.init(
         modelName: 'Snake',
       }
     );
+    
 module.exports = Snake;
