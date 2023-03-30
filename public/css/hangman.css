@@ -68,8 +68,8 @@ body {
     margin: 0 10px 10px 0;
     list-style: none;
     width: 35px;
-    height: 30px;
-    padding-top: 10px;
+    height: 35px;
+    padding-top: 5px;
     background: lightcoral;
     color: base-color;
     cursor: pointer;
@@ -120,6 +120,7 @@ body {
     width: 180px;
     margin: 10px;
     outline: none;
+    
   
     
   }

@@ -58,6 +58,7 @@ window.onload = function () {
         check();
         myButtons.appendChild(letters);
         letters.appendChild(list);
+        
       }
     };
   
