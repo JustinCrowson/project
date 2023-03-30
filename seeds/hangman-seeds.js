@@ -1,4 +1,4 @@
-const { Hangman } = require('../models');
+const { hang } = require('../models');
 
 const hangmanData = [
     {
@@ -15,6 +15,6 @@ const hangmanData = [
     }
 ]
 
-const seedHangman = () => Hangman.bulkCreate(hangmanData);
+const seedHangman = () => hang.bulkCreate(hangmanData);
 
 module.exports = seedHangman

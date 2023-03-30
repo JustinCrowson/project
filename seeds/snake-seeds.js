@@ -1,4 +1,4 @@
-const { Snake } = require('../models');
+const { snk } = require('../models');
 
 const snakeData = [
     {
@@ -18,6 +18,6 @@ const snakeData = [
     }
 ]
 
-const seedSnake = () => Snake.bulkCreate(snakeData);
+const seedSnake = () => snk.bulkCreate(snakeData);
 
 module.exports = seedSnake;

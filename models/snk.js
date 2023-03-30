@@ -19,8 +19,8 @@ Snake.init(
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'Snake',
+        modelName: 'snake',
       }
     );
-    
+
 module.exports = Snake;

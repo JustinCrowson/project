@@ -1,4 +1,4 @@
-const { NicTacToe } = require('../models');
+const { nic } = require('../models');
 
 const nicData = [
     {
@@ -18,6 +18,6 @@ const nicData = [
     }
 ]
 
-const seedNicTacToe = () => NicTacToe.bulkCreate(nicData);
+const seedNicTacToe = () => nic.bulkCreate(nicData);
 
 module.exports = seedNicTacToe;
