@@ -11,10 +11,7 @@ const seedDatabase = async () => {
   await sequelize.sync({ force: true });
   console.log('\n----- DATABASE SYNCED -----\n');
 
-  await User.bulkCreate(userData, {
-    individualHooks: true,
-    returning: true,
-  });
+
 
   await seedSnake();
   console.log('\n----- SNAKE SEEDED -----\n');
@@ -24,7 +21,15 @@ const seedDatabase = async () => {
 
   await seedNicTacToe();
   console.log('\n----- NICTACTOE SEEDED -----\n');
+
+  await User.bulkCreate(userData, {
+    individualHooks: true,
+    returning: true,
+  });
+  
   process.exit(0);
+
+
 };
 
 seedDatabase();

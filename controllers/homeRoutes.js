@@ -1,11 +1,23 @@
 const router = require('express').Router();
 const { response } = require('express');
-const { User, nic } = require('../models');
+const { User, nic, snk, hang } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, async (req, res) => {
   try {
+    const userData = await User.findOne({
+      include: [
+        {
+          model: User,
+          attributes: ['name']
+        }
+      ]
+    });
+
+    const user = userData.get((user) => user.get({ plain:true }));
+
     res.render('games', {
+      user,
       logged_in: req.session.logged_in,
     });
   } catch (err) {

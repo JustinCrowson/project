@@ -5,7 +5,7 @@ const snk = require('./snk');
 
 //! help
 
-  
+
   nic.belongsTo(User, {
     foreignKey: 'user_id',
   });
