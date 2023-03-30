@@ -6,12 +6,6 @@ const hangmanData = [
     },
     {
         score: 3
-    },
-    {
-        score: 13
-    },
-    {
-        score: 21
     }
 ]
 

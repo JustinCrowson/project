@@ -5,7 +5,7 @@ class Snake extends Model {}
 
 Snake.init(
     {
-        snake_id: {
+        id: {
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
@@ -19,7 +19,7 @@ Snake.init(
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'snake',
+        modelName: 'Snake',
       }
     );
 
