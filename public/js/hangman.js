@@ -41,9 +41,11 @@ var alphas = [
 
   // Get elements on the handle bar pages
   var lifesleft = document.getElementById("mylives");
-  var showCatagory = document.getElementById("scatagory");
+  // var showCatagory = document.getElementById("scatagory");
   var cluesleft = document.getElementById("hint");
   var showcluesz = document.getElementById("clue");
+  var scoreCount = document.getElementById("score")
+
 
   // create alphabet ul for the letters on the page
   var buttons = function () {
@@ -101,6 +103,7 @@ var alphas = [
       if (count + space === guess2.length) {
         lifesleft.innerHTML = "You Win!";
         win++;
+        scoreCount.innerText = win
       }
     }
   };

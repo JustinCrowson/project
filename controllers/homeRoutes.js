@@ -24,7 +24,7 @@ router.get('/', withAuth, async (req, res) => {
 //   }
 // });
 
-router.get('/nictactoe/', withAuth, async (req, res) => {
+router.get('/nictactoe', withAuth, async (req, res) => {
   try { 
     res.render('nictactoe', {
       logged_in: req.session.logged_in,

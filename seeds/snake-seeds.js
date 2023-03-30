@@ -6,6 +6,24 @@ const snakeData = [
     },
     {
         snake_score: 7
+    },
+    {
+        snake_score: 3
+    },
+    {
+        snake_score: 3
+    },
+    {
+        snake_score: 3
+    },
+    {
+        snake_score: 3
+    },
+    {
+        snake_score: 3
+    },
+    {
+        snake_score: 3
     }
 ]
 
